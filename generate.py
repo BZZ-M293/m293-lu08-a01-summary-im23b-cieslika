@@ -1,3 +1,6 @@
+def norm(value):
+    return value.lower().replace("/","___")
+
 with open("dokubase.html","r") as base:
     with open("doctemplate.html","r") as tmpl:
         with open("index.html","w") as oux:
@@ -9,8 +12,8 @@ with open("dokubase.html","r") as base:
             for line in base.readlines():
                 if line.startswith("#"):
                     if element_config != "":
-                        navdata += f"<li><a href='#{element_config.split('#')[1]}'>{element_config.split('#')[1]}</a></li>"
-                        topdata += (f"<article id='{element_config.split('#')[1]}'><h2>{element_config.split('#')[1]}@{element_config.split('#')[3]}</h2><a href='#top'>Go to top</a><br><p>{element_descr}</p><br><div class='codecont'><code>{element_content.replace("<","&lt;").replace(">","&gt;").replace("\n","<br>").replace(" ","&nbsp;")}</code></div><br>")
+                        navdata += f"<li><a href='#{norm(element_config.split('#')[1])}'>{element_config.split('#')[1]}</a></li>"
+                        topdata += (f"<article id='{norm(element_config.split('#')[1])}'><h2>{element_config.split('#')[1]}@{element_config.split('#')[3]}</h2><a href='#top'>Go to top</a><br><p>{element_descr}</p><br><div class='codecont'><code>{element_content.replace("<","&lt;").replace(">","&gt;").replace("\n","<br>").replace(" ","&nbsp;")}</code></div><br>")
                         if "UGEN" in element_config.split('#')[2].split(' '):
                             topdata += (f"<div class='examplecont'>{element_content.replace("\n","")}</div><br>")
                         topdata += "</article>"
