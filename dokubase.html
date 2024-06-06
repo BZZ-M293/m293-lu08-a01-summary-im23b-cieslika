@@ -1,0 +1,136 @@
+#Doctype##LU01
+!Im doctype stehen wichtige informationen zu der datei wie die html version
+<!DOCTYPE html>
+
+#Html##LU01
+!Das html element ist das oberste main element einer html datei
+<html>
+  ...
+</html>
+
+#Head##LU01
+!Im head stehen informationen wie titel oder links und andere metadaten
+<head>
+  <title></title>
+  <link rel="stylesheet" href="#"/>
+  ...
+</head>
+
+#Body##LU01
+!Im body steht der inhalt der seite, wir haben dort den Header (Kopfzeile) Main (Hauptinhalt) und Footer (Fusszeile)
+<body>
+  <header>
+    ...
+  </header>
+  <main>
+    ...
+  </main>
+  <footer>
+    ...
+  </footer>
+</body>
+
+#Header##LU02
+!Der Header ist die Kopfzeile, in welche zum beispiel die navigation mit nav reinkommt
+<header>
+  <nav>
+    <a href="https://google.com/">Google</a>
+    <a href="https://google.com/">Google 2</a>
+    <a href="https://google.com/">Google 3</a>
+  </nav>
+</header>
+
+#Footer##LU02
+!Der Footer ist die Fusszeile, dort kann auch navigation rein
+<footer>
+  <p>Summary by Summary Incorperated</p>
+  <nav>
+    <a href="agb.html">AGB</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
+</footer>
+
+#Main##LU02
+!Im main kommt der hauptinhalt rein mit article section, e.t.c
+<main>
+  ...
+</main>
+#Section/Article##LU03
+!Da kommen sektionen und artikel
+<section>
+  <h2>Heute</h2>
+  <article>
+    <h3>Mann behauptet HTML sei eine Programmiersprache</h3>
+    <section>
+      <p>16:26 An der Programmierkonferenz in Zürich behauptet junger 28 Jähriger HTML seie eine programmiersprache, er wurde von drei JS Entwicklern angegriffen</p>
+    </section>
+    <section>
+      <h4>Wie finden sie es ?</h4>
+      <a href="#">Gut</a>
+      <a href="#">Schlecht</a>
+    </section>
+  </article>
+  <article>
+    <h3>JS erreicht Schlagzeilen</h3>
+    <section>
+      <p>Die immer wachsende Programmiersprache JavaScript erreicht schon Schlagzeilen in unseren Zeitungen</p>
+    </section>
+    <section>
+      <h4>Wie finden sie es ?</h4>
+      <a href="#">Gut</a>
+      <a href="#">Schlecht</a>
+    </section>
+  </article>
+</section>
+<section>
+  <h2>Gestern</h2>
+  <article>
+    <h3>Laptop am Seeufer gefunden</h3>
+    <section>
+      <p>17:56 Unser Reporter Max Mustermann machte einen unglaublichen fund...</p>
+    </section>
+    <section>
+      <h4>Wie finden sie es ?</h4>
+      <a href="#">Gut</a>
+      <a href="#">Schlecht</a>
+    </section>
+  </article>
+</section>
+#htmlhint##LU04
+!Mit htmlhint was man mit npm herunterladen kann kann man schauen ob der codestyle richtig ist
+npm install htmlhint
+htmlhint {name von html}
+#Netzwerk##LU05
+!Es gibt bei http verschiedene Methoden wie POST/PUT (Vom Client zum Server) und GET (Server zum Client)
+#Pfade##LU05
+!Pfade bei html sind wie bei linux
+./file = Die datei "file" im jetzigen ordner
+/file = Die datei "file" im Root ordner
+../file = Die datei "file" im vorherigen ordner
+#Formularelemente#UGEN#LU06
+!Bei einem Formularelement werden vom Browser zum Client Daten gesended es fangt mit einem form element an was die url als action und die methode als method hat (POST, GET, PUT)
+<form action="#">
+  <input type="text" name="name" id="ihrname"/>
+  <label for="ihrname">Ihr Name</label>
+  <button type="submit">Absenden</button>
+  <button type="reset">Zurücksetzen</button>
+</form>
+#Mehr Formularelemente#UGEN#LU07
+!Es gibt viel mehr formular elemente
+<form action="#">
+  <input type="email" name="email" id="email"/>
+  <label for="email">Ihr Name</label>
+  <input type="date" name="datum">
+  <select name="auto">
+    <optgroup label="Deutsch">
+    <option>VW</option>
+    <option>Mercedes</option>
+    </optgroup>
+    <optgroup label="Franzoesisch">
+    <option>Renault</option>
+    </optgroup>
+  </select>
+
+  <button type="submit">Absenden</button>
+  <button type="reset">Zurücksetzen</button>
+</form>

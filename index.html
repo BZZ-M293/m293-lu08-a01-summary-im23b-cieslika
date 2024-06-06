@@ -1,21 +1,442 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 <head>
   <meta charset="UTF-8">
-  <title>Zusammenfassung Modul 293</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+  <title>Summary</title>
+  <style>
+      .codecont {
+          background-color: lightgray;
+          border: 1px black solid;
+          border-radius: 5px;
+          padding: 5px 5px 5px 5px;
+          margin: 5px 5px 5px 5px;
+      }
 
+      h1 {
+          transform: skew(-10deg);
+          color: blue;
+      }
+
+      body {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          margin: 1px 1px 1px 1px;
+      }
+
+      section {
+          padding: 1px 1px 1px 1px;
+          margin: 1px 1px 1px 1px;
+      }
+
+      article {
+          padding: 1px 1px 1px 1px;
+          margin: 1px 1px 1px 1px;
+      }
+
+      .examplecont {
+          background-color: lightblue;
+          border: 1px black solid;
+          border-radius: 5px;
+          padding: 5px 5px 5px 5px;
+          margin: 5px 5px 5px 5px;
+      }
+  </style>
 </head>
 <body>
-  <header>
-    
-  </header>
+<header>
+  <h1>Navigation</h1>
   <nav>
-    
+    <article id="top">
+      <ul>
+        <li><a href="#Doctype">Doctype</a></li>
+        <li><a href="#Html">Html</a></li>
+        <li><a href="#Head">Head</a></li>
+        <li><a href="#Body">Body</a></li>
+        <li><a href="#Header">Header</a></li>
+        <li><a href="#Footer">Footer</a></li>
+        <li><a href="#Main">Main</a></li>
+        <li><a href="#Section/Article">Section/Article</a></li>
+        <li><a href="#htmlhint">htmlhint</a></li>
+        <li><a href="#Netzwerk">Netzwerk</a></li>
+        <li><a href="#Pfade">Pfade</a></li>
+        <li><a href="#Formularelemente">Formularelemente</a></li>
+      </ul>
+    </article>
   </nav>
-  <h1>Zusammenfassung Modul 293</h1>
+</header>
+<main>
+  <h1>Inhalt</h1>
+  <article id="Doctype">
+    <h2>
+      Doctype@LU01
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Im doctype stehen wichtige informationen zu der datei wie die html version
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        &lt;!DOCTYPE&nbsp;html&gt;<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Html">
+    <h2>
+      Html@LU01
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Das html element ist das oberste main element einer html datei
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        &lt;html&gt;<br>
+        &nbsp;&nbsp;...<br>
+        &lt;/html&gt;<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Head">
+    <h2>
+      Head@LU01
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Im head stehen informationen wie titel oder links und andere metadaten
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+        &nbsp;&nbsp;&lt;link&nbsp;rel="stylesheet"&nbsp;href="#"/&gt;<br>
+        &nbsp;&nbsp;...<br>
+        &lt;/head&gt;<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Body">
+    <h2>
+      Body@LU01
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Im body steht der inhalt der seite, wir haben dort den Header (Kopfzeile) Main (Hauptinhalt) und Footer
+      (Fusszeile)
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        &lt;body&gt;<br>
+        &nbsp;&nbsp;&lt;header&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+        &nbsp;&nbsp;&lt;/header&gt;<br>
+        &nbsp;&nbsp;&lt;main&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+        &nbsp;&nbsp;&lt;/main&gt;<br>
+        &nbsp;&nbsp;&lt;footer&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+        &nbsp;&nbsp;&lt;/footer&gt;<br>
+        &lt;/body&gt;<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Header">
+    <h2>
+      Header@LU02
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Der Header ist die Kopfzeile, in welche zum beispiel die navigation mit nav reinkommt
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        &lt;header&gt;<br>
+        &nbsp;&nbsp;&lt;nav&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="https://google.com/"&gt;Google&lt;/a&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="https://google.com/"&gt;Google&nbsp;2&lt;/a&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="https://google.com/"&gt;Google&nbsp;3&lt;/a&gt;<br>
+        &nbsp;&nbsp;&lt;/nav&gt;<br>
+        &lt;/header&gt;<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Footer">
+    <h2>
+      Footer@LU02
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Der Footer ist die Fusszeile, dort kann auch navigation rein
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        &lt;footer&gt;<br>
+        &nbsp;&nbsp;&lt;p&gt;Summary&nbsp;by&nbsp;Summary&nbsp;Incorperated&lt;/p&gt;<br>
+        &nbsp;&nbsp;&lt;nav&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="agb.html"&gt;AGB&lt;/a&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="impressum.html"&gt;Impressum&lt;/a&gt;<br>
+        &nbsp;&nbsp;&lt;/nav&gt;<br>
+        &lt;/footer&gt;<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Main">
+    <h2>
+      Main@LU02
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Im main kommt der hauptinhalt rein mit article section, e.t.c
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        &lt;main&gt;<br>
+        &nbsp;&nbsp;...<br>
+        &lt;/main&gt;<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Section/Article">
+    <h2>
+      Section/Article@LU03
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Da kommen sektionen und artikel
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        &lt;section&gt;<br>
+        &nbsp;&nbsp;&lt;h2&gt;Heute&lt;/h2&gt;<br>
+        &nbsp;&nbsp;&lt;article&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Mann&nbsp;behauptet&nbsp;HTML&nbsp;sei&nbsp;eine&nbsp;Programmiersprache&lt;/h3&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;16:26&nbsp;An&nbsp;der&nbsp;Programmierkonferenz&nbsp;in&nbsp;Zürich&nbsp;behauptet&nbsp;junger&nbsp;28&nbsp;Jähriger&nbsp;HTML&nbsp;seie&nbsp;eine&nbsp;programmiersprache,&nbsp;er&nbsp;wurde&nbsp;von&nbsp;drei&nbsp;JS&nbsp;Entwicklern&nbsp;angegriffen&lt;/p&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Wie&nbsp;finden&nbsp;sie&nbsp;es&nbsp;?&lt;/h4&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="#"&gt;Gut&lt;/a&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="#"&gt;Schlecht&lt;/a&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+        &nbsp;&nbsp;&lt;/article&gt;<br>
+        &nbsp;&nbsp;&lt;article&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;JS&nbsp;erreicht&nbsp;Schlagzeilen&lt;/h3&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Die&nbsp;immer&nbsp;wachsende&nbsp;Programmiersprache&nbsp;JavaScript&nbsp;erreicht&nbsp;schon&nbsp;Schlagzeilen&nbsp;in&nbsp;unseren&nbsp;Zeitungen&lt;/p&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Wie&nbsp;finden&nbsp;sie&nbsp;es&nbsp;?&lt;/h4&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="#"&gt;Gut&lt;/a&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="#"&gt;Schlecht&lt;/a&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+        &nbsp;&nbsp;&lt;/article&gt;<br>
+        &lt;/section&gt;<br>
+        &lt;section&gt;<br>
+        &nbsp;&nbsp;&lt;h2&gt;Gestern&lt;/h2&gt;<br>
+        &nbsp;&nbsp;&lt;article&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Laptop&nbsp;am&nbsp;Seeufer&nbsp;gefunden&lt;/h3&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;17:56&nbsp;Unser&nbsp;Reporter&nbsp;Max&nbsp;Mustermann&nbsp;machte&nbsp;einen&nbsp;unglaublichen&nbsp;fund...&lt;/p&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Wie&nbsp;finden&nbsp;sie&nbsp;es&nbsp;?&lt;/h4&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="#"&gt;Gut&lt;/a&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="#"&gt;Schlecht&lt;/a&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+        &nbsp;&nbsp;&lt;/article&gt;<br>
+        &lt;/section&gt;<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="htmlhint">
+    <h2>
+      htmlhint@LU04
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Mit htmlhint was man mit npm herunterladen kann kann man schauen ob der codestyle richtig ist
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        npm&nbsp;install&nbsp;htmlhint<br>
+        htmlhint&nbsp;{name&nbsp;von&nbsp;html}<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Netzwerk">
+    <h2>
+      Netzwerk@LU05
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Es gibt bei http verschiedene Methoden wie POST/PUT (Vom Client zum Server) und GET (Server zum Client)
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Pfade">
+    <h2>
+      Pfade@LU05
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Pfade bei html sind wie bei linux
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        ./file&nbsp;=&nbsp;Die&nbsp;datei&nbsp;"file"&nbsp;im&nbsp;jetzigen&nbsp;ordner<br>
+        /file&nbsp;=&nbsp;Die&nbsp;datei&nbsp;"file"&nbsp;im&nbsp;Root&nbsp;ordner<br>
+        ../file&nbsp;=&nbsp;Die&nbsp;datei&nbsp;"file"&nbsp;im&nbsp;vorherigen&nbsp;ordner<br>
+      </code>
+    </div>
+    <br>
+  </article>
+  <article id="Formularelemente">
+    <h2>
+      Formularelemente@LU06
+    </h2>
+    <a href="#top">
+      Go to top</a>
+    <br>
+    <p>
+      Bei einem Formularelement werden vom Browser zum Client Daten gesended es fangt mit einem form element an was die
+      url als action und die methode als method hat (POST, GET, PUT)
+    </p>
+    <br>
+    <div class="codecont">
+      <code>
+        &lt;form&nbsp;action="#"&gt;<br>
+        &nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;name="name"&nbsp;id="ihrname"/&gt;<br>
+        &nbsp;&nbsp;&lt;label&nbsp;for="ihrname"&gt;Ihr&nbsp;Name&lt;/label&gt;<br>
+        &nbsp;&nbsp;&lt;button&nbsp;type="submit"&gt;Absenden&lt;/button&gt;<br>
+        &nbsp;&nbsp;&lt;button&nbsp;type="reset"&gt;Zurücksetzen&lt;/button&gt;<br>
+        &lt;/form&gt;<br>
+      </code>
+    </div>
+    <br>
+    <div class="examplecont">
+      <form action="#">
+        <input type="text" name="name" id="ihrname"/>
+        <label for="ihrname">
+          Ihr Name</label>
+        <button type="submit">
+          Absenden
+        </button>
+        <button type="reset">
+          Zurücksetzen
+        </button>
+      </form>
+    </div>
+    <br>
+  </article>
+  <h2>
+    Mehr Formularelemente@LU07
+  </h2>
+  <br>
+  <div class="codecont">
+    <code>
+      &lt;form&nbsp;action="#"&gt;<br>
+      &nbsp;&nbsp;&lt;input&nbsp;type="email"&nbsp;name="email"&nbsp;id="email"/&gt;<br>
+      &nbsp;&nbsp;&lt;label&nbsp;for="email"&gt;Ihr&nbsp;Name&lt;/label&gt;<br>
+      &nbsp;&nbsp;&lt;input&nbsp;type="date"&nbsp;name="datum"&gt;<br>
+      &nbsp;&nbsp;&lt;select&nbsp;name="auto"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup&nbsp;label="Deutsch"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;VW&lt;/option&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Mercedes&lt;/option&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup&nbsp;label="Franzoesisch"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Renault&lt;/option&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup&gt;<br>
+      &nbsp;&nbsp;&lt;/select&gt;<br>
+      &nbsp;&nbsp;&lt;button&nbsp;type="submit"&gt;Absenden&lt;/button&gt;<br>
+      &nbsp;&nbsp;&lt;button&nbsp;type="reset"&gt;Zurücksetzen&lt;/button&gt;<br>
+      &lt;/form&gt;</code>
+  </div>
+  <br>
+  <div class="examplecont">
+    <form action="#">
+      <input type="email" name="email" id="email"/>
+      <label for="email">
+        Ihr Name</label>
+      <input type="date" name="datum">
+      <select name="auto">
+        <optgroup label="Deutsch">
+          <option>
+            VW
+          </option>
+          <option>
+            Mercedes
+          </option>
+        </optgroup>
+        <optgroup label="Franzoesisch">
+          <option>
+            Renault
+          </option>
+        </optgroup>
+      </select>
+      <button type="submit">
+        Absenden
+      </button>
+      <button type="reset">
+        Zurücksetzen
+      </button>
+    </form>
+  </div>
+  <br>
 
-  <footer>
-    
-  </footer>
+</main>
+<footer>
+  <p>Generated with generate.py by Anthony</p>
+</footer>
+
 </body>
 </html>
