@@ -1,5 +1,5 @@
 def norm(value):
-    return value.lower().replace("/","___")
+    return value.lower().replace("/","-")
 
 with open("dokubase.html","r") as base:
     with open("doctemplate.html","r") as tmpl:
